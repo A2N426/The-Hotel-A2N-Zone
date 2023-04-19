@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "type": "Standard Single Room",
+        "img": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "cost": "119",
+        "capacity": "1",
+        "bed": "1",
+        "description": "Standard single rooms are design in open - concept living area have many facilities "
+    },
+    {
+        "id": 2,
+        "type": "Couple Power Room",
+        "img": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "cost": "159",
+        "capacity": "2",
+        "bed": "1",
+        "description": "Standard single rooms are design in open - concept living area have many facilities "
+    },
+    {
+        "id": 3,
+        "type": "Family Capacity Room",
+        "img": "https://images.unsplash.com/photo-1630660664869-c9d3cc676880?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "cost": "189",
+        "capacity": "4",
+        "bed": "2",
+        "description": "Standard single rooms are design in open - concept living area have many facilities "
+    }
+]
