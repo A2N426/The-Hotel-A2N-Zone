@@ -17,7 +17,7 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('/public/data/rooms.json')
+                loader: () => fetch('/rooms.json')
             },
             {
                 path: '/login',
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
             {
                 path: 'book/:id',
                 element: <PrivateRoute><Book></Book></PrivateRoute>,
-                loader:()=>fetch('/public/data/rooms.json')
+                loader:()=>fetch('/rooms.json')
             },
             {
                 path: '/register',
