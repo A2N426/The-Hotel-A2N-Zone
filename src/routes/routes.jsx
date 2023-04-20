@@ -7,28 +7,30 @@ import Home from "../pages/Home/Home";
 import LogIn from "../pages/Login/LogIn";
 import Book from "../pages/Book/Book";
 import Register from "../pages/Register/Register";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
-        children:[
+        children: [
             {
-                path:'/',
-                element:<Home></Home>,
+                path: '/',
+                element: <Home></Home>,
+                loader: () => fetch('/public/data/rooms.json')
+            },
+            {
+                path: '/login',
+                element: <LogIn></LogIn>
+            },
+            {
+                path: 'book/:id',
+                element: <PrivateRoute><Book></Book></PrivateRoute>,
                 loader:()=>fetch('/public/data/rooms.json')
             },
             {
-                path:'/login',
-                element:<LogIn></LogIn>
-            },
-            {
-                path:'/book',
-                element:<Book></Book>
-            },
-            {
-                path:'/register',
-                element:<Register></Register>
+                path: '/register',
+                element: <Register></Register>
             }
         ]
     },

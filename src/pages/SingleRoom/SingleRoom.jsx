@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaAmilia, FaOdnoklassniki, FaCommentsDollar } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const SingleRoom = ({ room }) => {
     const { id, bed, capacity, cost, description, img, type } = room;
@@ -15,7 +16,7 @@ const SingleRoom = ({ room }) => {
                     <p className='flex gap-2 items-center'> <FaAmilia className='mt-1' /> {bed}</p>
                     <p className='flex gap-2 items-center'> <FaOdnoklassniki /> {capacity}</p>
                     <p className='flex gap-2 items-center'> <FaCommentsDollar /> {cost}</p>
-                    <button className="btn btn-primary">Book</button>
+                    <Link to={`/book/${id}`} className="btn btn-primary">Book</Link>
                 </div>
             </div>
         </div>
